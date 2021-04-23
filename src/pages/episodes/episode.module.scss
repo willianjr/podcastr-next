@@ -1,5 +1,11 @@
 .episode{
-    max-width: 45rem;
+    height: calc(100vh - 6.5rem);
+    overflow-y:auto;
+   
+
+   .container{
+        
+    max-width:45rem;
     padding: 3rem 2rem;
     margin: 0 auto;
 
@@ -19,7 +25,8 @@
             z-index: 5;
             font-size: 0;
 
-            transition: filter 0.2s;
+            transition: all 0.2s ease;
+            transition-property: height, width, filter;
 
             &:first-child{
                 left:0;
@@ -34,7 +41,9 @@
                 transform: translate(50%,-50%);
             }
             &:hover{
-                filter:brightness(0.9)
+                filter:brightness(0.9);
+                height: 4rem;
+                width: 4rem;
             }
         }
     }
@@ -80,5 +89,6 @@
         color:var(--gray-800);
 
         p{ margin: 1.5rem 0;}
+    }
     }
 }

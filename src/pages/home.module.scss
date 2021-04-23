@@ -93,7 +93,8 @@
                     border-radius: 0.675rem;
                     font-size: 0;
 
-                    transition: filter 0.2s;
+                    transition: all 0.2s ease;
+            transition-property: height, width, filter;
 
                     img{
                         width: 1.5rem;
@@ -102,6 +103,8 @@
 
                     &:hover{
                         filter: brightness(0.95);
+                        width: 2.8rem;
+                        height: 2.8rem;
                     }
                 }
             }
